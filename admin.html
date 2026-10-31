@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KarenFlix · Panel admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="app-header"></div>
+<main class="wrap" id="adminRoot">
+  <div class="page-h"><h1>Panel de administración</h1><p>Aprueba propuestas, gestiona títulos y categorías.</p></div>
+  <div class="tabs big" id="tabs">
+    <button class="on" data-t="pendiente">Pendientes</button><button data-t="aprobada">Aprobadas</button>
+    <button data-t="rechazada">Rechazadas</button><button data-t="categorias">Categorías</button>
+  </div>
+  <div id="content"><div class="spin">Cargando…</div></div>
+</main>
+<div id="app-footer"></div>
+<script src="js/config.js"></script>
+<script src="js/core.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
