@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Parking - Login</title>
-    <link rel="stylesheet" href="./archivosCSS/login.css">
-    <link rel="stylesheet" href="./archivosCSS/responsive.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KarenFlix · Inicio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <main>
-        <form id="formulario">
-            <img src="./IMAGENES/images.png" alt="user-img">
-            <input type="text" id="username" placeholder="Usuario/Correo" required>
-            <input type="password" id="password" placeholder="Contraseña" required>
-            <div class="box-visible">
-                <input type="checkbox" id="visible">
-                <span>Mostrar contraseña</span>
-            </div>
-            <button type="submit">Iniciar Sesión</button>
-        </form>
-    </main>
-    <script src="./js/"></script>
+<div id="app-header"></div>
+<section class="hero" aria-label="Destacados">
+  <div class="wrap">
+    <div class="slider" id="slider"><div class="spin">Cargando destacados…</div></div>
+    <aside class="upnext"><h3>A continuación</h3><div id="upnext"></div>
+      <a href="peliculas.html?orden=ranking" style="display:inline-block;margin-top:10px;font-weight:600">Explorar ranking ›</a></aside>
+  </div>
+</section>
+<main class="wrap">
+  <div class="chips" id="chips"></div>
+  <section class="block"><div class="sec-h"><h2>Top ranking</h2><a href="peliculas.html?orden=ranking">Ver todo</a></div><div class="row" id="rowTop"></div></section>
+  <section class="block"><div class="sec-h"><h2>Más populares</h2><a href="peliculas.html?orden=popularidad">Ver todo</a></div><div class="row" id="rowPop"></div></section>
+  <section class="block"><div class="sec-h"><h2>Recién agregadas</h2><a href="peliculas.html">Ver todo</a></div><div class="row" id="rowNew"></div></section>
+</main>
+<div id="app-footer"></div>
+<script src="js/config.js"></script>
+<script src="js/core.js"></script>
+<script src="js/home.js"></script>
 </body>
 </html>

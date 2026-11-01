@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KarenFlix · Acceso</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="app-header"></div>
+<main class="wrap"><div class="auth">
+  <div class="tabs" role="tablist"><button class="on" data-m="login">Iniciar sesión</button><button data-m="register">Crear cuenta</button></div>
+  <div id="msg"></div>
+  <form id="authForm" novalidate>
+    <div class="field hidden" id="fNombre"><label for="nombre">Nombre</label><input id="nombre" name="nombre" autocomplete="name"></div>
+    <div class="field"><label for="correo">Correo electrónico</label><input id="correo" name="correo" type="email" autocomplete="email" required></div>
+    <div class="field"><label for="contrasena">Contraseña</label><input id="contrasena" name="contrasena" type="password" autocomplete="current-password" required></div>
+    <button class="btn" style="width:100%" id="submit">Iniciar sesión</button>
+  </form>
+</div></main>
+<div id="app-footer"></div>
+<script src="js/config.js"></script>
+<script src="js/core.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
